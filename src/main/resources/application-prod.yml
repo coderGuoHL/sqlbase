@@ -1,0 +1,11 @@
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://123.60.53.149:3306/sqlfather
+    username: root
+    password: guo<>1041haim239
+mybatis-plus:
+  configuration:
+    # 生产环境关闭日志
+    log-impl: ''
