@@ -56,7 +56,7 @@ public class FrontendCodeBuilder {
         List<FieldDTO> fieldDTOList = new ArrayList<>();
         for (Field field : tableSchema.getFieldList()) {
             FieldDTO fieldDTO = new FieldDTO();
-            fieldDTO.setComment(field.getComment());
+            fieldDTO.setComment(StringUtils.isNotBlank(field.getComment()) ? field.getComment() : "Field Comment");
             FieldTypeEnum fieldTypeEnum = Optional.ofNullable(FieldTypeEnum.getEnumByValue(field.getFieldType())).orElse(FieldTypeEnum.TEXT);
             fieldDTO.setTypescriptType(fieldTypeEnum.getTypescriptType());
             fieldDTO.setFieldName(StrUtil.toCamelCase(field.getFieldName()));
