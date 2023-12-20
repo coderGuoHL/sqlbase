@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
-@MapperScan("com.yupi.sqlfather.mapper")
+@MapperScan("com.cdeo.sqlbase.mapper")
 @EnableScheduling
 public class MainApplication {
 

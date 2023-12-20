@@ -33,5 +33,9 @@ public class GenerateVO implements Serializable {
 
     private String baseDaoCode;
 
+    private String mysqlDaoCode;
+
+    private String oracleDaoCode;
+
     private static final long serialVersionUID = 7122637163626243606L;
 }

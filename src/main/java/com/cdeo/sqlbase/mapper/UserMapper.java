@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.cdeo.sqlbase.model.entity.User;
 
 /**
- * @Entity com.yupi.sqlfather.model.domain.User
+ * @Entity com.cdeo.sqlbase.model.domain.User
  */
 public interface UserMapper extends BaseMapper<User> {
 

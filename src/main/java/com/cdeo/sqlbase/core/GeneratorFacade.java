@@ -57,6 +57,10 @@ public class GeneratorFacade {
         // 生成BaseDao层代码
         String baseDaoCode = BaseDaoBuilder.buildBaseDaoCode(tableSchema);
 
+        String mysqlDaoCode = BaseDaoBuilder.buildMysqlDaoCode(tableSchema);
+
+        String oracleDaoCode = BaseDaoBuilder.buildOracleDaoCode(tableSchema);
+
         // 封装返回
         GenerateVO generateVO = new GenerateVO();
         generateVO.setTableSchema(tableSchema);
@@ -68,6 +72,8 @@ public class GeneratorFacade {
         generateVO.setJavaObjectCode(javaObjectCode);
         generateVO.setTypescriptTypeCode(typescriptTypeCode);
         generateVO.setBaseDaoCode(baseDaoCode);
+        generateVO.setMysqlDaoCode(mysqlDaoCode);
+        generateVO.setOracleDaoCode(oracleDaoCode);
         return generateVO;
     }
 

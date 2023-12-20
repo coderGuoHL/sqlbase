@@ -31,7 +31,7 @@ public class Knife4jConfig {
                         .build())
                 .select()
                 // 指定 Controller 扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.yupi.sqlfather.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.cdeo.sqlbase.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

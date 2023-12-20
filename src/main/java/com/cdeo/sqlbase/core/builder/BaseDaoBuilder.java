@@ -43,6 +43,26 @@ public class BaseDaoBuilder {
         return out.toString();
     }
 
+    @SneakyThrows
+    public static String buildMysqlDaoCode(TableSchema tableSchema) {
+        JavaDaoCodeGenerateDTO javaDaoCodeGenerateDTO = prepareDataForTemp(tableSchema);
+
+        StringWriter out = new StringWriter();
+        Template temp = getTemplate("mysql_dao.ftl");
+        temp.process(javaDaoCodeGenerateDTO, out);
+        return out.toString();
+    }
+
+    @SneakyThrows
+    public static String buildOracleDaoCode(TableSchema tableSchema) {
+        JavaDaoCodeGenerateDTO javaDaoCodeGenerateDTO = prepareDataForTemp(tableSchema);
+
+        StringWriter out = new StringWriter();
+        Template temp = getTemplate("oracle_dao.ftl");
+        temp.process(javaDaoCodeGenerateDTO, out);
+        return out.toString();
+    }
+
     private static Template getTemplate(String fileName) {
         Template temp;
         try {
