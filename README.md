@@ -7,9 +7,9 @@
 
 
 
-
 源项目后端代码地址（鱼皮项目）：
 前端代码仓库：[https://github.com/liyupi/sql-father-frontend-public](https://github.com/liyupi/sql-father-frontend-public)
+
 后端代码仓库：[https://github.com/liyupi/sql-father-backend-public](https://github.com/liyupi/sql-father-backend-public)
 
 ## 项目背景
@@ -107,7 +107,25 @@ todo列表：
 1. 生成一个基于entity代码生成dao层代码生成模版。
    - 修改前端新增一个生成模版展示dao层展示
    - 修改后端，新增一个模版生成dao层代码
+     - 
 2. 
+
+
+
+功能点详细说明
+
+1、生成一个基于entity代码生成dao层代码生成模版（后端实现）
+
+- 配置好基础ftl文件模版 ✔
+- 用基础模板生成一个基础版本试试 ✔
+- 将所有包含id的字段收集起来，然后生成一个集合类型，根据类型集合生成根据Id查询的方法 ✔
+- mysql的实现类和oracle的实现类
+
+
+
+2、生成一个基于entity代码生成dao层代码生成模版（前端实现）
+
+- 新增一个tab页签来显示需要展示的代码 ✔
 
 
 
